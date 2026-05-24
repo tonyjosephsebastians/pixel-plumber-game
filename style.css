@@ -1,0 +1,46 @@
+:root {
+  --bg: #101822;
+  --panel: #1a2636;
+  --text: #ebf2ff;
+  --accent: #66f0d6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #304b70, var(--bg));
+  color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.app {
+  width: min(96vw, 1100px);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border: 5px solid #2b3f5e;
+  border-radius: 10px;
+  background: #87ceeb;
+  image-rendering: pixelated;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.hint {
+  margin: 0.6rem 0 0;
+  color: #c9d8f4;
+  font-size: 0.95rem;
+}
